@@ -1,0 +1,111 @@
+@import url('acceuil_candidat.css');
+
+
+.cv-side{
+   display: flex;
+   flex-direction: column;
+   margin-left: 500px;
+}
+.header-cv h1{
+    font-size:70px;
+    background: rgb(35,219,164);
+    background: linear-gradient(81deg, rgba(35,219,164,1) 0%, rgba(68,68,68,1) 62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    user-select: none;
+    }
+
+.cv-img img{
+    width:500px;
+    height: 500px;
+    user-select: none;
+    
+}
+
+/*uploading button*/
+
+.variants {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 40px;
+  
+}
+
+.file {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .file > input[type='file'] {
+    display: none
+  }
+
+  .file > label {
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor:pointer;
+    outline: 0;
+    user-select: none;
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    background-color: hsl(215, 68%, 71%);
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .file > label > i {
+    padding-right: 5px;
+  }
+
+.file > label {
+  color: hsl(48, 100%, 67%);
+  border-color: hsl(48, 100%, 67%);
+}
+
+.file > label > i {
+  animation: pulse 5s infinite;
+}
+
+.file > label:hover {
+  border-color: hsl(48, 100%, 67%);
+  background-color: hsl(48, 100%, 96%);
+}
+
+.file > label:active {
+  background-color: hsl(48, 100%, 91%);
+}
+
+@keyframes pulse {
+  0% {
+    color: hsl(48, 100%, 67%);
+  }
+  50% {
+    color: hsl(48, 100%, 38%);
+  }
+  100% {
+    color: hsl(48, 100%, 67%);
+  }
+}
+
+.deposer-cv i{
+  border-radius: 5px;
+padding:3px;
+background-color: #5d6d89;
+}
+
+.Acceuil i{
+  border-radius: 5px;
+  padding:3px;
+  background-color: transparent;
+}
