@@ -1,3 +1,76 @@
+<?php
+
+// Include the TesseractOCR class
+use thiagoalessio\TesseractOCR\TesseractOCR;
+
+// Include Composer autoloader
+require 'vendor/autoload.php';
+
+// Check if the form has been submitted using the POST method
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Check if the 'submit' button is set in the form
+    if (isset($_POST['submit'])) {
+
+        // Get the name and temporary location of the uploaded file
+        $file_name = $_FILES['file']['name'];
+        $tmp_file = $_FILES['file']['tmp_name'];
+
+        // Start a session and generate a unique session ID if not already started
+        if (!session_id()) {
+            session_start();
+            $unq = session_id();
+        }
+
+        // Generate a unique file name using the current timestamp and replacing certain characters
+        $file_name = uniqid() . '_' . time() . '_' . str_replace(
+            array('!', "@", '#', '$', '%', '^', '&', ' ', '*', '(', ')', ':', ';', ',', '?', '/' . '\\', '~', '`', '-'),
+            '_',
+            strtolower($file_name)
+        );
+
+        // Move the uploaded file to the 'uploads' directory with the unique file name
+        if (move_uploaded_file($tmp_file, 'uploads/' . $file_name)) {
+            try {
+                // Use TesseractOCR to read text from the uploaded image file
+                $fileRead = (new TesseractOCR('uploads/' . $file_name))
+                    ->setLanguage('eng')
+                    ->run();
+            } catch (Exception $e) {
+                // Handle exceptions (e.g., TesseractOCR library not installed or configured)
+                echo $e->getMessage();
+            }
+        } else {
+            // Display an error message if the file fails to upload
+            echo "<p class='alert alert-danger'>File failed to upload.</p>";
+        }
+
+        //mon propre code 
+        
+        
+        
+        // Les mots spécifiques que vous voulez rechercher
+        $mots_specifiques = array("unique", "candy", "Table","Mr","december");
+        
+        // Initialiser le tableau pour stocker les mots trouvés
+        $mots_trouves = array();
+        
+        // Rechercher les mots spécifiques dans le texte
+        foreach ($mots_specifiques as $mot) {
+            // Utiliser une expression régulière pour rechercher le mot dans le texte (insensible à la casse)
+            if (preg_match_all("/\b$mot\b/i", $fileRead, $matches)) {
+                // Ajouter les mots trouvés au tableau
+                $mots_trouves = array_merge($mots_trouves, $matches[0]);
+            }
+        }
+        
+        // Afficher le tableau des mots trouvés
+        
+        
+        
+
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,6 +149,17 @@
                                 <h1 id="attractive-question">
                                     Deposer votre Cv 
                                 </h1>  
+                                <p class="lead">
+
+
+                        <?php if ($_POST) : ?>
+                            <pre>
+                                <?= print_r($mots_trouves); ?>
+                            </pre>
+                        <?php endif; ?>
+
+
+                </p>
                         </div>
                         
                         <div class="cv-img">
@@ -83,14 +167,22 @@
                         </div>
                             <div class="variants">
                               
-                              <div class='file'>
-                                <label for='input-file'>
-                                    <i class="fa-solid fa-cloud-arrow-up"></i>
-                                  Uploading
-                                </label>
-                                <input id='input-file' type='file' />
-                              </div> 
                               
+
+                              <form action="" method="post" enctype="multipart/form-data">
+                                   <div class="form-group">
+                                      <div class='file'>
+                                        <label for="filechoose">
+                                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                                        Choose file
+                                        </label>
+                                        <input id="filechoose" type="file" name ="file" />
+                                      </div>      
+                                      <button class="btn btn-success mt-3" type="submit" name="submit">Upload</button>
+
+                                    </div>
+                             </form>
+                             
                             </div>
                           
                         
