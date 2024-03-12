@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="gestion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Recruteur</title>
+</head>
+<body>
+        <div class="full-container">
+            <!--sidebar-->
+            <div class="side-bar">
+                <h1 class="nav-side-header text text-warning ">Hire<span class="text text-success">wave</span></h1>
+                <ul>
+
+                     <a href="acceuil_recruteur.html">
+                        <li class="Acceuil" >
+                            <i class="fa-solid fa-door-open" ></i>
+                            <h4>Acceuil</h4>
+                        </li>
+                     </a>
+                    
+                     <a href="#">
+                        <li class="Gerer-candidats">
+                            <i class="fa-regular fa-rectangle-list"></i>
+                            <h4>Gerer candidats</h4>
+                        </li>
+                     </a> 
+
+
+                     <a href="#">
+                        <li class="offre-emploi">
+                            <i class="fas fa-list"></i>
+                            <h4>Offre d'emploi</h4>
+                        </li>
+                     </a>  
+                    
+                     <a href="#" >
+                        <li class="messages">
+                            <i class="fa-regular fa-message"></i>
+                           <h4>Messages</h4>
+                       </li>
+                    </a>
+
+                    <a href="#" >
+                        <li class="dashboard">
+                            <i class="fa-solid fa-chart-line"></i>
+                           <h4>Dashboard</h4>
+                       </li>
+                    </a>
+
+
+                     <a href="#">
+                        <li class="sign-out">
+                            <i class="fas fa-arrow-right-from-bracket"></i>
+                            <h4>Sign out</h4>
+                        </li>
+                     </a>
+
+                </ul>
+            </div>
+
+
+            <div class="main">
+                <h1>Gérer les Candidatures</h1>
+                <section class="recherche">
+                    <input type="text" placeholder="Rechercher une offre..." id="search-input">
+                    <button type="submit" id="search-btn">Rechercher</button>
+                </section>
+                <section class="offres">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Description</th>
+                                <th>Candidat</th>
+                                <th>CV</th>
+                                <th>Action</th>
+                                <th>Entreprise</th>
+                                <th>Offre</th>
+                            </tr>
+                        </thead>
+                        <tbody id="offres-list">
+                            <tr class="offre-item">
+                                <td>1234</td>
+                                <td>Notre entreprise recherche un développeur web talentueux pour rejoindre son équipe dynamique...</td>
+                                <td>John Doe</td>
+                                <td><a href="#">CV.pdf</a></td>
+                                <td>
+                                    
+
+                                    <button type="button" class="accept-btn" data-id="1234" data-action="accept">Accepter</button>
+                                    <button type="button" class="refuse-btn" data-id="1234" data-action="refuse">Refuser</button>
+
+                                </td>
+                                <td>Acme Inc.</td>
+                                <td>Développeur Web</td>
+                            </tr>
+                            <tr class="offre-item">
+                                <td>5678</td>
+                                <td>Notre agence de marketing est à la recherche d'un spécialiste en marketing numérique passionné pour rejoindre son équipe... </td>
+                                <td>Jane Smith</td>
+                                <td><a href="#">CV.pdf</a></td>
+                                <td>
+                                    <button type="button" class="accept-btn" data-id="1234" data-action="accept">Accepter</button>
+                                    <button type="button" class="refuse-btn" data-id="1234" data-action="refuse">Refuser</button>
+                                </td>
+                                <td>TechCo</td>
+                                <td>Spécialiste Marketing</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <script src="gestion.js" defer></script>
+
+        </body>
+        </html>
