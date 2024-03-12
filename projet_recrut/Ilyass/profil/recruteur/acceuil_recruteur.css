@@ -10,6 +10,20 @@ body{
     height: 100%;
     
 }
+.Logo {
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.Logo h1 {
+    margin-left: 35px;
+}
+
+.Logo img {
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 120px;
+}
 
 .side-bar{
     height: 100%;
@@ -17,7 +31,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    background: linear-gradient(273deg, #5d6d89, #879ac0, #c8cacd);
+    background: linear-gradient(273deg, #687bea, #687bea, #b9c2ed);
     background-size: 400% 400%;
     -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
@@ -103,7 +117,7 @@ body{
 
 
 .sign-out{
-    padding-top: 200px;
+    padding-top: 108px;
     padding-left: 20px;
     margin-right: 10px;
     border-radius: 10px; 

@@ -1,95 +1,45 @@
-.navbar{
-    background-color: #fff;
-    height: 70px;
-    margin: 20px;
-    border-radius: 16px;
-    padding: 0.5em;
-}
-.navbar-brand{
+.navbar {
+    background-color: rgba(255, 255, 255, 0.3) !important; 
+    border-radius: 20px;
+  }
+  
+
+.navbar-brand {
     font-weight: 500;
     color: #009970;
-    font-size: 24px;
+    font-size: 30px;
     transition: 0.3s color;
 }
 
-.signup-button{
-    background-color: #009970;
-    color: #fff;
-    font-size:  15px;
-    padding:8px 20px;
-    border-radius:50px ;
-    text-decoration: none;
-    transition: 0.3s background-color;    
-    margin-left: 14px;
-}
-.Login-button,.signup-button{
-    background-color: #009970;
-    color: #fff;
-    font-size:  15px;
-    padding:8px 20px;
-    border-radius:50px ;
-    text-decoration: none;
-    transition: 0.3s background-color;  
+.navbar-brand img {
+    width: 7%;
+    padding-bottom: 3px;
 }
 
-.Login-button:hover,.signup-button:hover{
-    background-color:#00b383 ;
-}
-
-.navbar-toggler{
-    border:none;
-    font-size: 1.25em;
-}
-
-.navbar-toggler:focus, .btn-close:focus{
-    box-shadow:none;
-    outline:none;
-}
 .nav-link{
-    color :#666777;
-    font-weight: 500;  
-    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 4px;
+   font-style: normal;
 }
 
-.nav-link:hover, .nav-link.active{
-
-    color:#000;
+.nav-link:hover{
+    border-bottom: 3px solid green;
 }
 
-@media (min-width :991px){
-.nav-link::before{
-    content:"";
-    position:absolute;
-    bottom:0;
-    left:50%;
-    transform: translatex(-50%);
-    width:0;
-    height: 2px;
-    background-color:#009970 ;
-    visibility: hidden;
-    transition: 0.3s ease-in-out;
+
+
+
+.Login-button {
+    background-color: #009970;
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
 }
 
-.nav-link:hover::before,.nav-link.active::before{
-
-    width:100%;
-    visibility:visible;
-}
-}
-
-.hero-section{
-    background: url(img/jujutsu-kaisen-ultra-1920x1080.jpg) no-repeat center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
-
-.hero-section::before{
-    background-color: rgba(0, 0, 0, 0.6);
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.Login-button:hover {
+    background-color: #00b383;
 }
