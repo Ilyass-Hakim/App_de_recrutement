@@ -1,0 +1,121 @@
+  .offre {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.3
+  }
+
+    .offre-frame {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      padding: 10px;
+      margin-right: 10px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+      flex: 10;
+    }
+    
+    .main{
+      padding-right: 120px;
+      padding-left: 130px;
+      margin :40px 30px 0 15px;
+      border: 3px solid #000000;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+   
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+    }
+  
+  
+    .full-container{
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      
+  }
+    
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+  
+    .apply-btn, .save-btn, .more-btn {
+      background-color: #4CAF50; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 15px; /* Rembourrage */
+    font-size: 13px; 
+    border: 1px solid #4CAF50; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; }
+   
+    
+    /*_____________________________________________*/
+  
+    .offres{
+     
+      margin-bottom: 200px; 
+      margin-left:200px;
+      padding-left: 70px;
+      padding-top: 20px;
+      background-color: #ffffff;
+      flex: 1;
+      
+    }
+
+    /*-------------------------*/
+.head h1{
+    font-size:70px;
+    text-indent: 90px;
+    background: rgb(35,219,164);
+    background: linear-gradient(81deg, rgba(35,219,164,1) 0%, rgba(68,68,68,1) 62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	   width: 85%;
+    text-align: center;
+
+ }
+
+.offres-recentes h2{
+   font-family: times, Times New Roman, times-roman, georgia, serif;
+	color: #444;
+	margin-top: 17px;
+	text-align: center;
+	font-size: 51px;
+	line-height: 44px;
+	letter-spacing: -2px;
+	font-weight: bold;
+}
+
+
+
+ /*------start------*/
+
+
+ /*form shape*/
+ .search-bar{
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      padding: 10px;
+      margin-right: 10px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+      flex: 10;
+ }
+
+ #form-offre {
+  text-align: center;
+}
+
+ .form_input{
+  margin-bottom: 10px;
+  width: 80%; /* Adjust width as needed */
+ }
+ 

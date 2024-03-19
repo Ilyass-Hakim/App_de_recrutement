@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "bakendborder",
+			"path": "../App_de_recrutement-master/adam/adam/adam/bakendborder"
+		},
+		{
+			"name": "adamdach",
+			"path": "."
+		},
+		{
+			"path": "../App_de_recrutement-master/adam/adam/adam/frontstyle"
+		},
+		{
+			"path": "../App_de_recrutement-master/adam/adam/adam/img_recruteur"
+		},
+		{
+			"path": "../App_de_recrutement-master/adam/adam/adam/scriptborder"
+		}
+	],
+	"settings": {}
+}

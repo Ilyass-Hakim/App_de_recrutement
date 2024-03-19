@@ -1,0 +1,102 @@
+
+
+  body{
+    background-image: url(img/background.jpg);
+    background-size:auto;
+  }
+
+/*profile*/
+.profile-side{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+.body-profil{
+    display: flex;
+    flex-direction: row;
+}
+
+.header-profil{
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-bottom: 15px;
+}
+.header-profil h1{
+    font-size:40px;
+    text-indent: 90px;
+    background: rgb(35,219,164);
+    background: linear-gradient(81deg, rgba(35,219,164,1) 0%, rgba(68,68,68,1) 62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	  width: 100%;
+    text-align: center;
+}
+
+.job-interview img{
+     width :500px;
+     height: 350px;
+     padding-bottom: 10px;
+     
+}
+.text-candiadate{
+       margin-left: 300px;
+}
+
+#presentation {
+    font-size: x-large;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    letter-spacing: 2px;
+}
+#presentation span{
+    margin-left: 20px;
+}
+#presentation q {
+    color: skyblue;
+}
+
+.bottom-text{
+    font-size: x-large;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    letter-spacing: 3px;
+    padding-left: 300px;
+}
+
+.footer-text {
+    margin-left: 180px;
+    font-size: 35px;
+	font-weight:  600;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 6s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+/*a changer pour chaque page du candidat*/
+
+.Acceuil i{
+    border-radius: 5px;
+  padding:3px;
+  background-color: #5d6d89;
+}

@@ -1,0 +1,217 @@
+.offre {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.3
+  }
+
+    .offre-frame {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      padding: 10px;
+      margin-right: 10px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+      flex: 10;
+    }
+    
+    .main{
+      padding-right: 120px;
+      padding-left: 130px;
+      margin :40px 30px 0 15px;
+      border: 3px solid #000000;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+   
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+    }
+  
+  
+    .full-container{
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      
+  }
+    
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+ 
+    
+    /*_____________________________________________*/
+  
+    .offres{
+     
+      margin-bottom: 200px; 
+      margin-left:200px;
+      padding-left: 70px;
+      padding-top: 20px;
+      background-color: #ffffff;
+      flex: 1;
+      
+    }
+
+    /*-------------------------*/
+.head h1{
+    font-size:70px;
+    text-indent: 90px;
+    background: #6d4caf;
+    background: linear-gradient(81deg, #6d4caf 0%, rgba(68,68,68,1) 62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	   width: 85%;
+    text-align: center;
+
+ }
+
+.offres-recentes h2{
+   font-family: times, Times New Roman, times-roman, georgia, serif;
+	color: #444;
+	margin-top: 17px;
+	text-align: center;
+	font-size: 51px;
+	line-height: 44px;
+	letter-spacing: -2px;
+	font-weight: bold;
+}
+
+
+
+ /*------start------*/
+
+
+ /*form shape*/
+ .search-bar{
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      padding: 10px 0 10px 100px;
+      margin-right: 30px;
+      margin-left: 15px;
+      border: 3px solid #000000;
+      border-radius: 10px;
+     
+ }
+
+ .search-bar input{
+   border:3px solid black;
+   margin-bottom: 15px;
+   width: 60%; /* Adjust width as needed */
+ }
+ .search-bar label{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+ #add-offre-header{
+    margin: 17px 170px 0 0;
+    font-family: times, Times New Roman, times-roman, georgia, serif;
+	color: #444;
+	margin-top: 17px;
+	text-align: center;
+	font-size: 51px;
+	line-height: 44px;
+	letter-spacing: -2px;
+	font-weight: bold;
+
+ }
+ #date_offre{
+    border:1px solid black;
+   margin-bottom: 15px;
+   width: 12%;
+}
+
+#description{
+    width: 500px;
+    height: 100px;
+}
+
+
+
+
+
+
+
+#submit-btn {
+  width: 110px;
+  appearance: button;
+  background-color: #6d4caf;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+  border: 1px solid #6d4caf;
+  border-radius: 1rem;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,rgba(46, 54, 80, 0.075) 0 1px 1px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin:0 0 10px 320px;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-transform: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+#submit-btn:focus:not(:focus-visible),
+#submit-btn:focus {
+  outline: 0;
+}
+
+#submit-btn:hover {
+  background-color: #3733E5;
+  border-color: #3733E5;
+}
+
+#submit-btn:focus {
+  background-color: #413FC5;
+  border-color: #3E3BBA;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+#submit-btn:active {
+  background-color: #3E3BBA;
+  background-image: none;
+  border-color: #3A38AE;
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
+}
+
+#submit-btn:active:focus {
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+#submit-btn:disabled {
+  background-image: none;
+  box-shadow: none;
+  opacity: .65;
+  pointer-events: none;
+} 
+
+.title{
+    font-weight: 600;
+    color:#444;
+}
+.st{
+    font-size: 17px;
+    font-weight: 600;
+    color:#a38cd2;
+}
+.offre-emploi i{
+    border-radius: 5px;
+  padding:3px;
+  background-color: #5d6d89;
+}

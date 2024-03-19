@@ -1,0 +1,113 @@
+       /* side bar */
+       .full-container{
+        display: flex;
+        flex-direction:row;
+        height: 100%;
+      }
+      
+      .Logo {
+        text-decoration: none;
+        pointer-events: none;
+      }
+      
+      .Logo h1 {
+        margin-left: 35px;
+        color:green;
+      }
+      
+      .Logo img {
+        margin-top: 20px;
+        margin-left: 70px;
+        width: 100px;
+      }
+      .side-bar{
+        height: 100%;
+        width: 250px; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: linear-gradient(273deg, #687bea, #687bea, #b9c2ed);
+        background-size: 400% 400%;
+        -webkit-animation: Gradient 15s ease infinite;
+        -moz-animation: Gradient 15s ease infinite;
+        animation: Gradient 15s ease infinite;
+        padding-top: 20px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        
+      }
+      .side-bar a{
+        color:rgb(0, 0, 0);
+      }
+      .side-bar ul {
+        list-style:none;
+        padding: 0;
+        margin-top: 80px;
+      }
+      
+      .side-bar ul li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        font-family: "Inconsolata", monospace;
+        font-optical-sizing: auto;
+        font-style:normal;
+        font-weight:900;
+        font-variation-settings: 'wght' 900;
+       
+      }
+      
+      .side-bar i {
+        margin-right: 30px;
+        font-size: x-large;
+      
+      }
+      
+      .side-bar i:hover{
+      border-radius: 5px;
+      padding:3px;
+      background-color: #5d6d89;
+      }
+      
+      .nav-side-header{
+        text-align: center;
+      }
+      
+      .Acceuil{
+        padding-left: 11px;
+        margin-right: 10px;
+        border-radius: 10px;
+      }
+      
+      .Formul{
+        padding-left: 11px;
+        margin-right: 10px;
+        border-radius: 10px;
+      }
+      
+      .offre-emploi{
+        padding-left: 11px;
+        margin-right: 10px;
+        border-radius: 10px; 
+      }
+      
+      .deposer-cv{
+        padding-left: 12px;
+        margin-right: 10px;
+        border-radius: 10px; 
+       
+      }
+      .messages{
+        padding-left: 12px;
+        margin-right: 10px;
+        border-radius: 10px; 
+       
+      }
+      
+      .sign-out{
+        padding-top: 170px;
+        padding-left: 20px;
+        margin-right: 10px;
+        border-radius: 10px; 
+      }
+      /*fin side bar*/
+      
